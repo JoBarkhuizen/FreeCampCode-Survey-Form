@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<!--FreeCampCode Survey Page-->
+<!--Jo Barkhuizen, Test Analyst, Web Design training-->
+
+<html lang="en">
+	<head>
+	<title>FCC: Survey Form</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+     body {
+         width: 28.5em;
+         text-align: left;
+         font-family: arial, sans-serif;
+         margin: auto;
+        }
+        form {
+            float: center;
+        }
+        #title {
+            text-align: center;
+        }
+        .textcolor {
+            color: blue;
+        }
+        p {
+            line-height: 40%;
+        }
+        
+        h4 {
+            font-weight: normal;
+            margin-bottom: 0px;
+        }
+        /*#description {
+           word-break: break-all; /*I removed this as it does not break properly in IE, but in other browsers it does*/
+            }*/
+         #name-label {
+                width: 4em;
+                text-align: right;
+                margin-right: 10px;
+                } 
+           
+            #email-label {
+                width: 4em;
+                text-align: right;
+                margin-right: 10px;
+               }
+            
+            #number-label {
+                width: 4em;
+                text-align: right;
+                margin-right: 10px;
+               margin-left: 0;
+              }
+        
+        #number {
+            width: 6em;
+           }
+          
+        #submit {
+            margin-left: 2em;
+        }
+        </style>
+    </head>
+    <body>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+       
+    <h1 id="title">Survey Form:</h1>
+        <form id="survey-form">
+                
+                <p id="description">By filling out this survey form, you will help us better understand</p> <p>your experience with our service.</p>
+            
+        <div id="dropdown">
+        <h4 class="textcolor">Select the type of feedback:
+        <select name="feedback">
+        <option>Compliment</option>
+        <option>Query</option>
+        <option>Complaint</option>
+        </select></h4>
+        </div>
+           
+<p>
+   <label id="name-label" for="name">Name:</label>
+      <input type="text" name="name" placeholder="Enter Your Name" size="30" maxlength="256" id="name" required></p>
+  
+  <p>
+      <label id="email-label" for="email">Email:</label>
+         <input type="email" id="email" placeholder="Enter Your Email" size="30" maxlength="256" id="email" required></p>
+  
+  <p>
+      <label id="number-label" for="age">Age:</label>
+          <input type="number" id="number" min="18" max="100" placeholder="Your age"></p>
+      
+          
+     <div id="cinema">
+        <h4 class="textcolor">Select the cinema(s) you have visited:</h4>
+            <input type ="checkbox" name="theatre" value="wp" id="wp"><label for="wp" class="cinema">WonderPark</label>
+            <input type ="checkbox" name="theatre" value="kl" id="kl"><label for="kl" class="cinema">Kollonade</label>
+            <input type ="checkbox" name="theatre" value="im" id="im"><label for="im" class="cinema">Irene Mall</label><br><br>
+            <input type ="checkbox" name="theatre" value="rp" id="rp"><label for="rp" class="cinema">Retail Park</label>
+            <input type ="checkbox" name="theatre" value="mm" id="mm"><label for="mm" class="cinema">Menlyn Maine</label> 
+            </div></p>
+            
+                   
+<div id="movies">
+    <h4 class="textcolor">Select the movie(s) you have seen: </h4>
+            <input type ="checkbox" name="movie" value="sm" id="sm"><label for="sm" class="movies">Spider-Man Far From Home</label>
+            <input type ="checkbox" name="movie" value="ts" id="ts"><label for="ts" class="movies">Toy Story 4</label>
+                <br><br>
+            <input type ="checkbox" name="movie" value="mb" id="mb"><label for="mb" class="movies">Men In Black International</label>
+            <input type ="checkbox" name="movie" value="an" id="an"><label for="an" class="movies">Anna</label>
+            <input type ="checkbox" name="movie" value="al" id="al"><label for="al" class="movies">Alladin</label>
+                <br><br>
+            <input type ="checkbox" name="movie" value="ae" id="ae"><label for="ae" class="movies">Avengers End Game</label>
+            <input type ="checkbox" name="movie" value="dp" id="dp"><label for="dp" class="movies">Dark Phoenix</label>
+         </div>
+                  
+   <div id="name">   
+             <h4 class="textcolor">Will you visit us again?</h4>
+     <label for="yes">Yes</label> <input type="radio" value="yes" name="visit" id="yes" checked="checked">
+        <label for="no">No</label> <input type="radio" value="no" name="visit" id="no">
+         </div>          
+                 
+           
+    <h4 class="textcolor">Tell us more: </h4>
+             
+
+    <textarea placeholder="Place your comment here..." name="interest" rows="5" cols="30"></textarea>
+           
+    <p>
+    <button id="submit" type="submit">Submit</button>
+   
+    </p>     
+      
+    </body>
+    </html>
